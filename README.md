@@ -46,6 +46,11 @@ You can experience the interactive website live here: [**📚Lit-Sense**](https:
 - Mood Analysis: Uses a DistilRoBERTa model to detect emotional tones (e.g., Joy, Calm, Suspense) in book descriptions.
 - Smart Genre Classification: Combines aggressive keyword matching with a Zero-Shot BART classifier for high accuracy.
 
+### 🎯 Smart Deduplication
+- For every query:
+  - Tracks previously shown books
+  - Ensures fresh recommendations every time
+  
 ### ✨ AI-Powered Explanations
 - Integrated with Google Gemini 2.5 Flash to provide a "Why this matches" explanation for every book recommended.
 - Explains the connection between your specific query and the book's content.
@@ -123,7 +128,7 @@ Terminal output demonstrating the system's sub-second response times for semanti
 
 ## ⚙️ How It Works
 
-### The application follows a high-speed pipeline optimized for sub-4-second responses:
+### The application uses a hybrid AI workflow that combines vector search + LLM reasoning:
 
 **1. Data Fetching:** The system fetches book candidates in parallel from Google Books API based on the user's query.
 
@@ -145,18 +150,24 @@ Terminal output demonstrating the system's sub-second response times for semanti
 
 ### LitSense is engineered for speed. It includes a dedicated test_performance.py suite to benchmark the pipeline.
 
-- Time Budgeting: The app allocates strict time budgets (e.g., 40% fetch, 30% search) to prevent timeouts.
-- Cache Persistence: utils.py manages a books_cache.pkl to store API responses, making repeated searches instant.
-- Speed Presets: config.py allows toggling between 'Fastest', 'Balanced', and 'Accurate' modes to tune the speed/accuracy tradeoff.
+- **Time Budgeting:** The app allocates strict time budgets (e.g., 40% fetch, 30% search) to prevent timeouts.
+
+- **Cache Persistence:** utils.py manages a books_cache.pkl to store API responses, making repeated searches instant.
+
+- **Speed Presets:** config.py allows toggling between 'Fastest', 'Balanced', and 'Accurate' modes to tune the speed/accuracy tradeoff.
 
 ---
 
 ## 🔮 Future Enhancements
 
 - Integration with local LLMs (Llama 3) for offline explanations.
+
 - User bookshelves and "To Read" lists using local storage.
+
 - Multi-language search & explanations
+
 - Advanced visualization of the vector space (book clusters).
+
 - Commercial API integration (Amazon/Goodreads) for direct purchase links.
 
 ---
@@ -173,7 +184,7 @@ To get a local copy up and running, follow these simple steps.
 
 - Google Gemini API Key
 
-- Google Books API Key (Optional, but recommended)
+- Google Books API Key
 
 ### Installation
 
@@ -212,7 +223,7 @@ Enter a query → apply filters → get personalized semantic recommendations.
 
 ## 📄 License
 
-This project is licensed under the MIT License — free to use, modify, and distribute with proper attribution.
+This project is licensed under the **MIT License** — free to use, modify, and distribute with proper attribution.
 
 ---
 
