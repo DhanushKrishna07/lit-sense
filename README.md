@@ -1,5 +1,6 @@
-# 📚 LitSense – Semantic Book Recommender System ⚡
-LitSense is a lightning-fast, AI-powered book recommendation engine built using Gradio and Sentence Transformers. It goes beyond simple keyword matching by using Semantic Search to understand the "vibe" and meaning of your query. It leverages FAISS for vector indexing, Hugging Face pipelines for emotion/genre classification, and the Google Gemini API to generate personalized explanations for every recommendation.
+# 📚LitSense – AI-Powered Semantic Book Recommender System⚡
+
+**Lit-Sense** is a lightning-fast, AI-powered book recommendation engine built using Python, Gradio, Transformers and Sentence Transformers. It goes beyond simple keyword matching by using Semantic Search to understand the "vibe" and meaning of your query. It leverages FAISS for vector indexing, Hugging Face pipelines for emotion/genre classification, and the Google Gemini API to generate personalized explanations for every recommendation.
 
 <p align="center">
 
@@ -7,172 +8,215 @@ LitSense is a lightning-fast, AI-powered book recommendation engine built using 
 
 </p>
 
-🌐 Live Demo
-You can experience the interactive application live here: 📚 LitSense Live (Replace with your live link)
+---
 
-📚 Table of Contents
-📚 Overview
+## 🌐 Live Demo
 
-🌐 Live Demo
+You can experience the interactive website live here: [**📚Lit-Sense**](https://huggingface.co/spaces/DhanushKrishna07/Agro-Sight)
 
-🚀 Features
+---
 
-🛠 Tech Stack
+## 📚 Table of Contents
 
-📸 Screenshots
+- [📚 Overview](#litsense--ai-powered-semantic-book-recommender-system)
+- [🌐 Live Demo](#-live-application)
+- [🚀 Features](#-features)
+- [🛠 Tech Stack](#-tech-stack)
+- [📸 Screenshots](#-screenshots)
+- [🎥 Demo Video](#-demo-video)
+- [⚙️ How It Works](#️-how-it-works)
+- [⚡ Performance](#️-performance)
+- [🔮 Future Enhancements](#-future-enhancements)
+- [🚀 Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [📄 License](#-license)
+- [📬 Contact](#-contact)
 
-⚙️ How It Works
+---
 
-⚡ Performance
+## 🚀 Features
 
-🔮 Future Enhancements
+### 🧠 Semantic Search (Not Just Keywords)
+- Uses Sentence-BERT (all-MiniLM-L6-v2) to convert search queries into vector embeddings.
+- Finds books based on meaning, plot, and themes rather than just matching titles.
 
-🚀 Getting Started
+### 😊 Mood & Genre Filtering
+- Mood Analysis: Uses a DistilRoBERTa model to detect emotional tones (e.g., Joy, Calm, Suspense) in book descriptions.
+- Smart Genre Classification: Combines aggressive keyword matching with a Zero-Shot BART classifier for high accuracy.
 
-Prerequisites
+### ✨ AI-Powered Explanations
+- Integrated with Google Gemini 2.5 Flash to provide a "Why this matches" explanation for every book recommended.
+- Explains the connection between your specific query and the book's content.
 
-Installation
+### ⚡ High-Performance Architecture
+- Parallel Processing: Uses ThreadPoolExecutor to fetch book data and generate explanations concurrently.
+- Smart Caching: Implements LRU Caching and persistent disk caching (pickle) for instant results on repeated queries.
+- Progressive Loading: Fetches data in batches to ensure the UI remains responsive.
 
-Running the Application
+---
 
-📄 License
+## 🛠 Tech Stack
 
-📬 Contact
+### 1. Core AI & Search:
 
-🚀 Features
-🧠 Semantic Search (Not Just Keywords)
-Uses Sentence-BERT (all-MiniLM-L6-v2) to convert search queries into vector embeddings.
+- **Sentence Transformers:** Generates dense vector embeddings for book descriptions to enable semantic search.
 
-Finds books based on meaning, plot, and themes rather than just matching titles.
+- **FAISS (Facebook AI Similarity Search):** Performs high-speed similarity searches on the vector embeddings.
 
-😊 Mood & Genre Filtering
-Mood Analysis: Uses a DistilRoBERTa model to detect emotional tones (e.g., Joy, Calm, Suspense) in book descriptions.
+- **Hugging Face Transformers:**
+  - facebook/bart-large-mnli for Zero-Shot Genre Classification.
+  - j-hartmann/emotion-english-distilroberta-base for Mood/Emotion detection.
 
-Smart Genre Classification: Combines aggressive keyword matching with a Zero-Shot BART classifier for high accuracy.
+### 2. Backend & APIs:
 
-✨ AI-Powered Explanations
-Integrated with Google Gemini 2.5 Flash to provide a "Why this matches" explanation for every book recommended.
+- **Python:** The core logic handling data processing, API calls, and threading.
 
-Explains the connection between your specific query and the book's content.
+- **Google Books API:** The primary source for fetching real-time book metadata.
 
-⚡ High-Performance Architecture
-Parallel Processing: Uses ThreadPoolExecutor to fetch book data and generate explanations concurrently.
+- **Open Library API:** Serves as a robust fallback data source.
 
-Smart Caching: Implements LRU Caching and persistent disk caching (pickle) for instant results on repeated queries.
+- **Google Gemini API:** Generates context-aware textual explanations for recommendations.
 
-Progressive Loading: Fetches data in batches to ensure the UI remains responsive.
+### 3. Frontend:
 
-🛠 Tech Stack
-1. Core AI & Search:
-Sentence Transformers: Generates dense vector embeddings for book descriptions to enable semantic search.
+- **Gradio:** Builds the clean, responsive web interface with dropdowns, sliders, and real-time Markdown output.
 
-FAISS (Facebook AI Similarity Search): Performs high-speed similarity searches on the vector embeddings.
+---
 
-Hugging Face Transformers: - facebook/bart-large-mnli for Zero-Shot Genre Classification.
+## 📸 Demo Screenshots
 
-j-hartmann/emotion-english-distilroberta-base for Mood/Emotion detection.
-
-2. Backend & APIs:
-Python: The core logic handling data processing, API calls, and threading.
-
-Google Books API: The primary source for fetching real-time book metadata.
-
-Open Library API: Serves as a robust fallback data source.
-
-Google Gemini API: Generates context-aware textual explanations for recommendations.
-
-3. Frontend:
-Gradio: Builds the clean, responsive web interface with dropdowns, sliders, and real-time Markdown output.
-
-📸 Screenshots
-🏠 Home Interface
+**🏠 Home Interface**
 The clean landing page with semantic search input, mood sliders, and genre filters.
+![Home Interface](assets/screenshots/Home%20Interface.png)
 
-😊 Mood Filtering
-Example of filtering specifically for "Calm" books suitable for bedtime reading.
-
-📂 Genre Filtering
-Targeted search results filtering for "Business" and productivity books.
-
-💡 Pro Tips & Instructions
+**💡 Pro Tips & Instructions**
 Built-in guide helping users maximize the search potential.
+![Pro Tips & Instructions](assets/screenshots/Pro%20Tips%20%26%20Instructions.png)
 
-🔄 Refreshed Results
+**😊 Mood Filtering**
+Example of filtering specifically for "Calm" books suitable for bedtime reading.
+![Mood Filtering](assets/screenshots/Mood%20Filtering.png)
+
+**🔄 Refreshed Results of Mood Filtering**
 The system tracks history to ensure you get fresh recommendations when searching the same topic again.
+![Refreshed Results of Mood Filtering](assets/screenshots/Refreshed%20Results%20of%20Mood%20Filtering.png)
 
-⚙️ How It Works
-The application follows a high-speed pipeline optimized for sub-4-second responses:
-1. Data Fetching: The system fetches book candidates in parallel from Google Books API based on the user's query.
+**📂 Genre Filtering**
+Targeted search results filtering for "Business" and productivity books.
+![Genre Filtering](assets/screenshots/Genre%20Filtering.png)
 
-2. Vector Embedding: The book descriptions are passed through all-MiniLM-L6-v2 to create 384-dimensional vectors.
+**⚡ Real-Time Performance Logs**
+Terminal output demonstrating the system's sub-second response times for semantic search, filtering, and AI explanation generation.
+![Real-Time Performance Logs](assets/screenshots/Real-Time%20Performance%20Logs.png)
 
-3. Semantic Search: A FAISS index is built on the fly, and the user's query is compared against the books to find the closest semantic matches.
+---
 
-4. Intelligent Filtering: - Genre: Checks metadata first, then uses keyword patterns, and falls back to AI classification if necessary. - Mood: Analyzes the emotional tone of the description to match the user's requested mood.
+## 🎥 Demo Video
 
-5. AI Explanation: The top matches are sent to Google Gemini to generate a custom "Why this matches" explanation.
+📺 Click below to **watch/download the full project demo**:
 
-6. Display: Results are rendered in Gradio with covers, metadata, and the AI explanation.
+➡️ [View Full Demo](assets/video/Full_Demo_Project.mp4)
 
-⚡ Performance Optimization
-LitSense is engineered for speed. It includes a dedicated test_performance.py suite to benchmark the pipeline.
+---
 
-Time Budgeting: The app allocates strict time budgets (e.g., 40% fetch, 30% search) to prevent timeouts.
+## ⚙️ How It Works
 
-Cache Persistence: utils.py manages a books_cache.pkl to store API responses, making repeated searches instant.
+### The application follows a high-speed pipeline optimized for sub-4-second responses:
 
-Speed Presets: config.py allows toggling between 'Fastest', 'Balanced', and 'Accurate' modes to tune the speed/accuracy tradeoff.
+**1. Data Fetching:** The system fetches book candidates in parallel from Google Books API based on the user's query.
 
-🔮 Future Enhancements
-Integration with local LLMs (Llama 3) for offline explanations.
+**2. Vector Embedding:** The book descriptions are passed through all-MiniLM-L6-v2 to create 384-dimensional vectors.
 
-User bookshelves and "To Read" lists using local storage.
+**3. Semantic Search:** A FAISS index is built on the fly, and the user's query is compared against the books to find the closest semantic matches.
 
-Advanced visualization of the vector space (book clusters).
+**4. Intelligent Filtering:** 
+- Genre: Checks metadata first, then uses keyword patterns, and falls back to AI classification if necessary.
+- Mood: Analyzes the emotional tone of the description to match the user's requested mood.
 
-Commercial API integration (Amazon/Goodreads) for direct purchase links.
+**5. AI Explanation:** The top matches are sent to Google Gemini to generate a custom "Why this matches" explanation.
 
-🚀 Getting Started
+**6. Display:** Results are rendered in Gradio with covers, metadata, and the AI explanation.
+
+---
+
+## ⚡ Performance Optimization
+
+### LitSense is engineered for speed. It includes a dedicated test_performance.py suite to benchmark the pipeline.
+
+- Time Budgeting: The app allocates strict time budgets (e.g., 40% fetch, 30% search) to prevent timeouts.
+- Cache Persistence: utils.py manages a books_cache.pkl to store API responses, making repeated searches instant.
+- Speed Presets: config.py allows toggling between 'Fastest', 'Balanced', and 'Accurate' modes to tune the speed/accuracy tradeoff.
+
+---
+
+## 🔮 Future Enhancements
+
+- Integration with local LLMs (Llama 3) for offline explanations.
+- User bookshelves and "To Read" lists using local storage.
+- Multi-language search & explanations
+- Advanced visualization of the vector space (book clusters).
+- Commercial API integration (Amazon/Goodreads) for direct purchase links.
+
+---
+
+## 🚀 Getting Started
+
 To get a local copy up and running, follow these simple steps.
 
-Prerequisites
-Python 3.8+
+### Prerequisites
 
-pip package manager
+- Python 3.10+
 
-Google Gemini API Key
+- pip package manager
 
-Google Books API Key (Optional, but recommended)
+- Google Gemini API Key
 
-Installation
-1. Clone the repository:
+- Google Books API Key (Optional, but recommended)
 
-Bash
+### Installation
 
-git clone https://github.com/YourUsername/LitSense.git
-cd LitSense
+**1. Clone the repository:**
+
+```bash
+git clone https://github.com/DhanushKrishna07/lit-sense.git
+cd lit-sense
 pip install -r requirements.txt
-2. Set up environment variables:
+```
+
+**2. Set up environment variables:**
 
 Create a .env file in the root directory and add your API keys:
 
-Bash
-
+```bash
 GEMINI_API_KEY=your_gemini_key_here
 GOOGLE_BOOKS_API_KEY=your_google_books_key_here
-Running the Application
-Bash
+```
 
+### Running the Application
+
+```bash
 python app.py
+```
+
 Once running, open the web app in your browser at:
 
-Bash
-
+```bash
 http://127.0.0.1:7860
-📄 License
+```
+
+Enter a query → apply filters → get personalized semantic recommendations.
+
+---
+
+## 📄 License
+
 This project is licensed under the MIT License — free to use, modify, and distribute with proper attribution.
 
-📬 Contact
-📨 Email: [Your Email Here]
+---
 
-🔗 LinkedIn: [Your LinkedIn URL Here]
+## 📧 Contact
+
+📨 **Email:** dhanushkrishnab@gmail.com  
+🔗 **LinkedIn:** https://www.linkedin.com/in/dhanushkrishna15 
