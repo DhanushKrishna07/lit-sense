@@ -1,4 +1,4 @@
-#📚 LitSense – Semantic Book Recommender System ⚡
+# 📚 LitSense – Semantic Book Recommender System ⚡
 LitSense is a lightning-fast, AI-powered book recommendation engine built using Gradio and Sentence Transformers. It goes beyond simple keyword matching by using Semantic Search to understand the "vibe" and meaning of your query. It leverages FAISS for vector indexing, Hugging Face pipelines for emotion/genre classification, and the Google Gemini API to generate personalized explanations for every recommendation.
 
 <p align="center">
