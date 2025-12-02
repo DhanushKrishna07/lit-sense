@@ -4,7 +4,7 @@
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Python-Backend%2B-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-Backend%20Logic-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Gradio-Frontend-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/>
 
 <img src="https://img.shields.io/badge/Hugging_Face-Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
