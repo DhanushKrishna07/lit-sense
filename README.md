@@ -92,34 +92,22 @@ You can experience the interactive website live here: [**📚Lit-Sense**](https:
 
 ## 📸 Demo Screenshots
 
-**🏠 Home Interface**
-
-The clean landing page with semantic search input, mood sliders, and genre filters.
+**🏠 Home Interface** - The clean landing page with semantic search input, mood sliders, and genre filters.
 ![Home Interface](assets/screenshots/Home%20Interface.png)
 
-**💡 Pro Tips & Instructions**
-
-Built-in guide helping users maximize the search potential.
+**💡 Pro Tips & Instructions** - Built-in guide helping users maximize the search potential.
 ![Pro Tips & Instructions](assets/screenshots/Pro%20Tips%20%26%20Instructions.png)
 
-**😊 Mood Filtering**
-
-Example of filtering specifically for "Calm" books suitable for bedtime reading.
+**😊 Mood Filtering** - Example of filtering specifically for "Calm" books suitable for bedtime reading.
 ![Mood Filtering](assets/screenshots/Mood%20Filtering.png)
 
-**🔄 Refreshed Results of Mood Filtering**
-
-The system tracks history to ensure you get fresh recommendations when searching the same topic again.
+**🔄 Refreshed Results of Mood Filtering** - The system tracks history to ensure you get fresh recommendations when searching the same topic again.
 ![Refreshed Results of Mood Filtering](assets/screenshots/Refreshed%20Results%20of%20Mood%20Filtering.png)
 
-**📂 Genre Filtering**
-
-Targeted search results filtering for "Business" and productivity books.
+**📂 Genre Filtering** - Targeted search results filtering for "Business" and productivity books.
 ![Genre Filtering](assets/screenshots/Genre%20Filtering.png)
 
-**⚡ Real-Time Performance Logs**
-
-Terminal output demonstrating the system's sub-second response times for semantic search, filtering, and AI explanation generation.
+**⚡ Real-Time Performance Logs** - Terminal output demonstrating the system's sub-second response times for semantic search, filtering, and AI explanation generation.
 ![Real-Time Performance Logs](assets/screenshots/Real-Time%20Performance%20Logs.png)
 
 ---
