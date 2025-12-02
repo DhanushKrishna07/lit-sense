@@ -7,8 +7,8 @@
 <img src="https://img.shields.io/badge/Python-Backend-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Gradio-Frontend-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/>
 
-<img src="https://img.shields.io/badge/Hugging_Face-Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
-<img src="https://img.shields.io/badge/Sentence_Transformers-Embeddings-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+<img src="https://img.shields.io/badge/Hugging_Face-Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=yellow"/>
+<img src="https://img.shields.io/badge/Sentence_Transformers-Embeddings-FFD21E?style=for-the-badge&logo=huggingface&logoColor=yellow"/>
 <img src="https://img.shields.io/badge/FAISS-Vector_Search-00ADD8?style=for-the-badge&logo=meta&logoColor=white"/>
 <img src="https://img.shields.io/badge/Google_Gemini-GenAI-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
 
