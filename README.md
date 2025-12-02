@@ -4,7 +4,20 @@
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Gradio-Frontend-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/> <img src="https://img.shields.io/badge/Sentence_Transformers-Embeddings-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/> <img src="https://img.shields.io/badge/Google%20Gemini-GenAI-4285F4?style=for-the-badge&logo=google&logoColor=white"/> <img src="https://img.shields.io/badge/FAISS-Vector_Search-00ADD8?style=for-the-badge&logo=meta&logoColor=white"/> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Sentence%20Transformers-Embeddings-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+<img src="https://img.shields.io/badge/FAISS-Vector%20Search-00ADD8?style=for-the-badge&logo=meta&logoColor=white"/>
+<img src="https://img.shields.io/badge/Hugging%20Face%20Transformers-Zero--Shot%20%2F%20NLP-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white"/>
+<img src="https://img.shields.io/badge/BART--MNLI-ZeroShot%20Genre%20Classification-8E44AD?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/DistilRoBERTa-Emotion%20Detection-6A5ACD?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-Backend%20Logic-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google%20Books%20API-Data%20Fetching-34A853?style=for-the-badge&logo=google&logoColor=white"/>
+<img src="https://img.shields.io/badge/Open%20Library%20API-Fallback%20Source-7F5AF0?style=for-the-badge&logo=openlibrary&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google%20Gemini-LLM%20Explanations-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+<img src="https://img.shields.io/badge/ThreadPoolExecutor-Parallel%20Processing-FF8C00?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Gradio-Interactive%20UI-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Markdown-Dynamic%20Results-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
+<img src="https://img.shields.io/badge/HTML5-Clean%20Layout-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-Responsive%20Design-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 
 </p>
 
@@ -92,7 +105,7 @@ You can experience the interactive website live here: [**📚Lit-Sense**](https:
 
 ## 📸 Demo Screenshots
 
-**🏠 Home Interface** - The clean landing page with semantic search input, mood sliders, and genre filters.
+**🏠 Home Interface** - The clean landing page with semantic search input, mood filter, genre filter and count sliders.
 ![Home Interface](assets/screenshots/Home%20Interface.png)
 
 **💡 Pro Tips & Instructions** - Built-in guide helping users maximize the search potential.
@@ -108,6 +121,7 @@ You can experience the interactive website live here: [**📚Lit-Sense**](https:
 ![Genre Filtering](assets/screenshots/Genre%20Filtering.png)
 
 **⚡ Real-Time Performance Logs** - Terminal output demonstrating the system's sub-second response times for semantic search, filtering, and AI explanation generation.
+
 ![Real-Time Performance Logs](assets/screenshots/Real-Time%20Performance%20Logs.png)
 
 ---
