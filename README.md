@@ -4,20 +4,19 @@
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Sentence%20Transformers-Embeddings-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
-<img src="https://img.shields.io/badge/FAISS-Vector%20Search-00ADD8?style=for-the-badge&logo=meta&logoColor=white"/>
-<img src="https://img.shields.io/badge/Hugging%20Face%20Transformers-Zero--Shot%20%2F%20NLP-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white"/>
-<img src="https://img.shields.io/badge/BART--MNLI-ZeroShot%20Genre%20Classification-8E44AD?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/DistilRoBERTa-Emotion%20Detection-6A5ACD?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-Backend%20Logic-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Google%20Books%20API-Data%20Fetching-34A853?style=for-the-badge&logo=google&logoColor=white"/>
-<img src="https://img.shields.io/badge/Open%20Library%20API-Fallback%20Source-7F5AF0?style=for-the-badge&logo=openlibrary&logoColor=white"/>
-<img src="https://img.shields.io/badge/Google%20Gemini-LLM%20Explanations-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
-<img src="https://img.shields.io/badge/ThreadPoolExecutor-Parallel%20Processing-FF8C00?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Gradio-Interactive%20UI-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/>
-<img src="https://img.shields.io/badge/Markdown-Dynamic%20Results-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
-<img src="https://img.shields.io/badge/HTML5-Clean%20Layout-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSS3-Responsive%20Design-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Gradio-Frontend-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Hugging_Face-Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+<img src="https://img.shields.io/badge/Sentence_Transformers-Embeddings-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+<img src="https://img.shields.io/badge/FAISS-Vector_Search-00ADD8?style=for-the-badge&logo=meta&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google_Gemini-GenAI-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/BART_Large_MNLI-ZeroShot_Genre-8E44AD?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/DistilRoBERTa-Emotion_Detection-6A5ACD?style=for-the-badge&logo=python&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Google_Books_API-Data-34A853?style=for-the-badge&logo=google&logoColor=white"/>
+<img src="https://img.shields.io/badge/Open_Library_API-Fallback-7F5AF0?style=for-the-badge&logo=openlibrary&logoColor=white"/>
 
 </p>
 
