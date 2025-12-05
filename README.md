@@ -24,7 +24,7 @@
 
 ## 🌐 Live Demo
 
-You can experience the interactive website live here: [**📚Lit-Sense**](https://huggingface.co/spaces/DhanushKrishna07/Agro-Sight)
+You can experience the interactive website live here: [**📚Lit-Sense**](https://huggingface.co/spaces/DhanushKrishna07/Lit-Sense)
 
 ---
 
